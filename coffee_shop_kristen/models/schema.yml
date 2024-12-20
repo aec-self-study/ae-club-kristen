@@ -1,0 +1,9 @@
+
+version: 2
+
+models:
+  - name: customers
+    description: "Customer data"
+    columns:
+      - name: customer_id
+        description: "ID of the customer"
