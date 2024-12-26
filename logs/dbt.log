@@ -193,3 +193,474 @@ There are 1 unused configuration paths:
 [0m18:22:42.611146 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79139b3d88b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79139b2488e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7913857f66b0>]}
 [0m18:22:42.611826 [debug] [MainThread]: Flushing usage events
 [0m18:22:42.658775 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:31:36.086831 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e4cc2928880>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e4cc18e7820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e4cc18e7880>]}
+
+
+============================== 18:31:36.090542 | e02f5783-a195-4c50-8d9e-587103a7f72d ==============================
+[0m18:31:36.090542 [info ] [MainThread]: Running with dbt=1.9.1
+[0m18:31:36.091327 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/vscode/.dbt', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/workspaces/ae-club-kristen/logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt test', 'send_anonymous_usage_stats': 'True'}
+[0m18:31:37.017456 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'e02f5783-a195-4c50-8d9e-587103a7f72d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e4cb0ef8b50>]}
+[0m18:31:37.149337 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'e02f5783-a195-4c50-8d9e-587103a7f72d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e4cb0e66410>]}
+[0m18:31:37.150184 [info ] [MainThread]: Registered adapter: bigquery=1.9.0
+[0m18:31:37.331869 [debug] [MainThread]: checksum: 5e8d1596cf4eae33c11286bbb248a722d21b9f00d8a7ced8137c642517055418, vars: {}, profile: , target: , version: 1.9.1
+[0m18:31:37.400271 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m18:31:37.400954 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'e02f5783-a195-4c50-8d9e-587103a7f72d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e4cc27ec730>]}
+[0m18:31:38.438719 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.coffee_shop_kristen.customers.columns
+- models.coffee_shop_kristen.customers
+[0m18:31:38.443943 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'e02f5783-a195-4c50-8d9e-587103a7f72d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e4cb0903e50>]}
+[0m18:31:38.508008 [debug] [MainThread]: Wrote artifact WritableManifest to /workspaces/ae-club-kristen/target/manifest.json
+[0m18:31:38.510860 [debug] [MainThread]: Wrote artifact SemanticManifest to /workspaces/ae-club-kristen/target/semantic_manifest.json
+[0m18:31:38.531428 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'e02f5783-a195-4c50-8d9e-587103a7f72d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e4cb0354070>]}
+[0m18:31:38.532049 [info ] [MainThread]: Found 1 model, 489 macros
+[0m18:31:38.532539 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e02f5783-a195-4c50-8d9e-587103a7f72d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e4cb0a6aef0>]}
+[0m18:31:38.534043 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m18:31:38.534712 [debug] [MainThread]: Command end result
+[0m18:31:38.561058 [debug] [MainThread]: Wrote artifact WritableManifest to /workspaces/ae-club-kristen/target/manifest.json
+[0m18:31:38.562642 [debug] [MainThread]: Wrote artifact SemanticManifest to /workspaces/ae-club-kristen/target/semantic_manifest.json
+[0m18:31:38.565998 [debug] [MainThread]: Wrote artifact RunExecutionResult to /workspaces/ae-club-kristen/target/run_results.json
+[0m18:31:38.566980 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": true, "command_wall_clock_time": 2.5397398, "process_in_blocks": "12008", "process_kernel_time": 0.334632, "process_mem_max_rss": "212320", "process_out_blocks": "2912", "process_user_time": 3.314071}
+[0m18:31:38.567609 [debug] [MainThread]: Command `dbt test` succeeded at 18:31:38.567501 after 2.54 seconds
+[0m18:31:38.568056 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e4cc2928880>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e4cb0e66410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e4cc2799b70>]}
+[0m18:31:38.568524 [debug] [MainThread]: Flushing usage events
+[0m18:31:38.588535 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:32:40.602036 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77acff480880>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77ad0032f820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77ad0032f880>]}
+
+
+============================== 18:32:40.605127 | 6c25a240-97f4-4c5a-b695-61b13b6de51f ==============================
+[0m18:32:40.605127 [info ] [MainThread]: Running with dbt=1.9.1
+[0m18:32:40.606076 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/vscode/.dbt', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': '/workspaces/ae-club-kristen/logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt test', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m18:32:41.372016 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '6c25a240-97f4-4c5a-b695-61b13b6de51f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77ace98c8f70>]}
+[0m18:32:41.508259 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '6c25a240-97f4-4c5a-b695-61b13b6de51f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77acff33b9a0>]}
+[0m18:32:41.509115 [info ] [MainThread]: Registered adapter: bigquery=1.9.0
+[0m18:32:41.707152 [debug] [MainThread]: checksum: 5e8d1596cf4eae33c11286bbb248a722d21b9f00d8a7ced8137c642517055418, vars: {}, profile: , target: , version: 1.9.1
+[0m18:32:41.774796 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m18:32:41.775438 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '6c25a240-97f4-4c5a-b695-61b13b6de51f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77acfec60970>]}
+[0m18:32:42.845570 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '6c25a240-97f4-4c5a-b695-61b13b6de51f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77ace9634220>]}
+[0m18:32:42.920710 [debug] [MainThread]: Wrote artifact WritableManifest to /workspaces/ae-club-kristen/target/manifest.json
+[0m18:32:42.923811 [debug] [MainThread]: Wrote artifact SemanticManifest to /workspaces/ae-club-kristen/target/semantic_manifest.json
+[0m18:32:42.944470 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '6c25a240-97f4-4c5a-b695-61b13b6de51f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77ace8ec9060>]}
+[0m18:32:42.945090 [info ] [MainThread]: Found 1 model, 489 macros
+[0m18:32:42.945610 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '6c25a240-97f4-4c5a-b695-61b13b6de51f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77ace9f77ca0>]}
+[0m18:32:42.947134 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m18:32:42.947802 [debug] [MainThread]: Command end result
+[0m18:32:42.975289 [debug] [MainThread]: Wrote artifact WritableManifest to /workspaces/ae-club-kristen/target/manifest.json
+[0m18:32:42.977217 [debug] [MainThread]: Wrote artifact SemanticManifest to /workspaces/ae-club-kristen/target/semantic_manifest.json
+[0m18:32:42.980640 [debug] [MainThread]: Wrote artifact RunExecutionResult to /workspaces/ae-club-kristen/target/run_results.json
+[0m18:32:42.981690 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": true, "command_wall_clock_time": 2.4374065, "process_in_blocks": "0", "process_kernel_time": 0.379255, "process_mem_max_rss": "212224", "process_out_blocks": "2920", "process_user_time": 3.345435}
+[0m18:32:42.982338 [debug] [MainThread]: Command `dbt test` succeeded at 18:32:42.982229 after 2.44 seconds
+[0m18:32:42.982788 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77acff480880>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77acff33b9a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77acff2edb70>]}
+[0m18:32:42.983258 [debug] [MainThread]: Flushing usage events
+[0m18:32:43.013393 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:39:38.270421 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7848669dc820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x78486785b820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x78486785b880>]}
+
+
+============================== 18:39:38.273136 | be72d122-4c0c-462d-ba0e-dc82d3549322 ==============================
+[0m18:39:38.273136 [info ] [MainThread]: Running with dbt=1.9.1
+[0m18:39:38.273803 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': '/workspaces/ae-club-kristen/logs', 'fail_fast': 'False', 'profiles_dir': '/home/vscode/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'invocation_command': 'dbt test', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m18:39:39.037865 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'be72d122-4c0c-462d-ba0e-dc82d3549322', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7848679b63b0>]}
+[0m18:39:39.167092 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'be72d122-4c0c-462d-ba0e-dc82d3549322', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x784854e02f50>]}
+[0m18:39:39.167995 [info ] [MainThread]: Registered adapter: bigquery=1.9.0
+[0m18:39:39.361383 [debug] [MainThread]: checksum: 5e8d1596cf4eae33c11286bbb248a722d21b9f00d8a7ced8137c642517055418, vars: {}, profile: , target: , version: 1.9.1
+[0m18:39:39.431316 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m18:39:39.431973 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'be72d122-4c0c-462d-ba0e-dc82d3549322', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7848661a0940>]}
+[0m18:39:40.639032 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.coffee_shop_kristen.example
+[0m18:39:40.644160 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'be72d122-4c0c-462d-ba0e-dc82d3549322', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x78485432d900>]}
+[0m18:39:40.732053 [debug] [MainThread]: Wrote artifact WritableManifest to /workspaces/ae-club-kristen/target/manifest.json
+[0m18:39:40.734943 [debug] [MainThread]: Wrote artifact SemanticManifest to /workspaces/ae-club-kristen/target/semantic_manifest.json
+[0m18:39:40.755202 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'be72d122-4c0c-462d-ba0e-dc82d3549322', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x784854398fa0>]}
+[0m18:39:40.755804 [info ] [MainThread]: Found 1 model, 2 data tests, 489 macros
+[0m18:39:40.756290 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'be72d122-4c0c-462d-ba0e-dc82d3549322', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7848552e4130>]}
+[0m18:39:40.757866 [info ] [MainThread]: 
+[0m18:39:40.758349 [info ] [MainThread]: Concurrency: 8 threads (target='dev')
+[0m18:39:40.758795 [info ] [MainThread]: 
+[0m18:39:40.759546 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m18:39:40.760908 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_aec-students_dbt_kristen'
+[0m18:39:40.761460 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m18:39:42.253877 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'be72d122-4c0c-462d-ba0e-dc82d3549322', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x78485430bb50>]}
+[0m18:39:42.254598 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m18:39:42.257531 [debug] [Thread-1 (]: Began running node test.coffee_shop.not_null_customers_customer_id.5c9bf9911d
+[0m18:39:42.257967 [debug] [Thread-2 (]: Began running node test.coffee_shop.unique_customers_customer_id.c5af1ff4b1
+[0m18:39:42.258479 [info ] [Thread-1 (]: 1 of 2 START test not_null_customers_customer_id ............................... [RUN]
+[0m18:39:42.258936 [info ] [Thread-2 (]: 2 of 2 START test unique_customers_customer_id ................................. [RUN]
+[0m18:39:42.259721 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_aec-students_dbt_kristen, now test.coffee_shop.not_null_customers_customer_id.5c9bf9911d)
+[0m18:39:42.260292 [debug] [Thread-2 (]: Acquiring new bigquery connection 'test.coffee_shop.unique_customers_customer_id.c5af1ff4b1'
+[0m18:39:42.260762 [debug] [Thread-1 (]: Began compiling node test.coffee_shop.not_null_customers_customer_id.5c9bf9911d
+[0m18:39:42.261236 [debug] [Thread-2 (]: Began compiling node test.coffee_shop.unique_customers_customer_id.c5af1ff4b1
+[0m18:39:42.285830 [debug] [Thread-2 (]: Writing injected SQL for node "test.coffee_shop.unique_customers_customer_id.c5af1ff4b1"
+[0m18:39:42.287282 [debug] [Thread-1 (]: Writing injected SQL for node "test.coffee_shop.not_null_customers_customer_id.5c9bf9911d"
+[0m18:39:42.288388 [debug] [Thread-2 (]: Began executing node test.coffee_shop.unique_customers_customer_id.c5af1ff4b1
+[0m18:39:42.289033 [debug] [Thread-1 (]: Began executing node test.coffee_shop.not_null_customers_customer_id.5c9bf9911d
+[0m18:39:42.413413 [debug] [Thread-2 (]: Writing runtime sql for node "test.coffee_shop.unique_customers_customer_id.c5af1ff4b1"
+[0m18:39:42.413843 [debug] [Thread-1 (]: Writing runtime sql for node "test.coffee_shop.not_null_customers_customer_id.5c9bf9911d"
+[0m18:39:42.414776 [debug] [Thread-2 (]: On test.coffee_shop.unique_customers_customer_id.c5af1ff4b1: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "coffee_shop_kristen", "target_name": "dev", "node_id": "test.coffee_shop.unique_customers_customer_id.c5af1ff4b1"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+with dbt_test__target as (
+
+  select customer_id as unique_field
+  from `aec-students`.`dbt_kristen`.`customers`
+  where customer_id is not null
+
+)
+
+select
+    unique_field,
+    count(*) as n_records
+
+from dbt_test__target
+group by unique_field
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m18:39:42.415734 [debug] [Thread-1 (]: On test.coffee_shop.not_null_customers_customer_id.5c9bf9911d: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "coffee_shop_kristen", "target_name": "dev", "node_id": "test.coffee_shop.not_null_customers_customer_id.5c9bf9911d"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select customer_id
+from `aec-students`.`dbt_kristen`.`customers`
+where customer_id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m18:39:42.416256 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m18:39:42.417229 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m18:39:43.171137 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=aec-students&j=bq:US:6d8bb3fc-0034-45b5-be31-8dcf9b436307&page=queryresults
+[0m18:39:43.799048 [info ] [Thread-1 (]: 1 of 2 PASS not_null_customers_customer_id ..................................... [[32mPASS[0m in 1.54s]
+[0m18:39:43.800067 [debug] [Thread-1 (]: Finished running node test.coffee_shop.not_null_customers_customer_id.5c9bf9911d
+[0m18:39:43.811110 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=aec-students&j=bq:US:a3e63db2-601d-4c3f-bcd1-2bea0cffe170&page=queryresults
+[0m18:39:44.249125 [info ] [Thread-2 (]: 2 of 2 PASS unique_customers_customer_id ....................................... [[32mPASS[0m in 1.99s]
+[0m18:39:44.250371 [debug] [Thread-2 (]: Finished running node test.coffee_shop.unique_customers_customer_id.c5af1ff4b1
+[0m18:39:44.252502 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m18:39:44.253216 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m18:39:44.253609 [debug] [MainThread]: Connection 'test.coffee_shop.not_null_customers_customer_id.5c9bf9911d' was properly closed.
+[0m18:39:44.253979 [debug] [MainThread]: Connection 'test.coffee_shop.unique_customers_customer_id.c5af1ff4b1' was properly closed.
+[0m18:39:44.254377 [info ] [MainThread]: 
+[0m18:39:44.255130 [info ] [MainThread]: Finished running 2 data tests in 0 hours 0 minutes and 3.50 seconds (3.50s).
+[0m18:39:44.256207 [debug] [MainThread]: Command end result
+[0m18:39:44.281578 [debug] [MainThread]: Wrote artifact WritableManifest to /workspaces/ae-club-kristen/target/manifest.json
+[0m18:39:44.283169 [debug] [MainThread]: Wrote artifact SemanticManifest to /workspaces/ae-club-kristen/target/semantic_manifest.json
+[0m18:39:44.290416 [debug] [MainThread]: Wrote artifact RunExecutionResult to /workspaces/ae-club-kristen/target/run_results.json
+[0m18:39:44.290822 [info ] [MainThread]: 
+[0m18:39:44.291391 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m18:39:44.291847 [info ] [MainThread]: 
+[0m18:39:44.292358 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 TOTAL=2
+[0m18:39:44.293413 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": true, "command_wall_clock_time": 6.076455, "process_in_blocks": "2192", "process_kernel_time": 0.374343, "process_mem_max_rss": "222676", "process_out_blocks": "2992", "process_user_time": 3.783254}
+[0m18:39:44.294033 [debug] [MainThread]: Command `dbt test` succeeded at 18:39:44.293929 after 6.08 seconds
+[0m18:39:44.294478 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7848669dc820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7848679b63b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x784866af3220>]}
+[0m18:39:44.294935 [debug] [MainThread]: Flushing usage events
+[0m18:39:44.342153 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:40:17.223023 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a6aa04b0820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a6aa132b820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a6aa132b880>]}
+
+
+============================== 18:40:17.225702 | d9af6db9-70b7-401e-b638-0b03fface2b6 ==============================
+[0m18:40:17.225702 [info ] [MainThread]: Running with dbt=1.9.1
+[0m18:40:17.226352 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': '/workspaces/ae-club-kristen/logs', 'fail_fast': 'False', 'profiles_dir': '/home/vscode/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt docs generate', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m18:40:17.936056 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'd9af6db9-70b7-401e-b638-0b03fface2b6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a6aa14863b0>]}
+[0m18:40:18.094675 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'd9af6db9-70b7-401e-b638-0b03fface2b6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a6a8a8d0820>]}
+[0m18:40:18.095838 [info ] [MainThread]: Registered adapter: bigquery=1.9.0
+[0m18:40:18.295314 [debug] [MainThread]: checksum: 5e8d1596cf4eae33c11286bbb248a722d21b9f00d8a7ced8137c642517055418, vars: {}, profile: , target: , version: 1.9.1
+[0m18:40:18.416209 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m18:40:18.416735 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m18:40:18.423557 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.coffee_shop_kristen.example
+[0m18:40:18.463477 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'd9af6db9-70b7-401e-b638-0b03fface2b6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a6a8a5024a0>]}
+[0m18:40:18.476891 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'd9af6db9-70b7-401e-b638-0b03fface2b6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a6a8a503f10>]}
+[0m18:40:18.477514 [info ] [MainThread]: Found 1 model, 2 data tests, 489 macros
+[0m18:40:18.477994 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd9af6db9-70b7-401e-b638-0b03fface2b6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a6a8a503a30>]}
+[0m18:40:18.479649 [info ] [MainThread]: 
+[0m18:40:18.480135 [info ] [MainThread]: Concurrency: 8 threads (target='dev')
+[0m18:40:18.480569 [info ] [MainThread]: 
+[0m18:40:18.481246 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m18:40:18.482152 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_aec-students_dbt_kristen'
+[0m18:40:18.482725 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m18:40:19.182807 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd9af6db9-70b7-401e-b638-0b03fface2b6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a6a8a503340>]}
+[0m18:40:19.183437 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m18:40:19.186967 [debug] [Thread-1 (]: Began running node model.coffee_shop.customers
+[0m18:40:19.187502 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_aec-students_dbt_kristen, now model.coffee_shop.customers)
+[0m18:40:19.187954 [debug] [Thread-1 (]: Began compiling node model.coffee_shop.customers
+[0m18:40:19.197543 [debug] [Thread-1 (]: Writing injected SQL for node "model.coffee_shop.customers"
+[0m18:40:19.198325 [debug] [Thread-1 (]: Began executing node model.coffee_shop.customers
+[0m18:40:19.198794 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m18:40:19.199753 [debug] [Thread-1 (]: Finished running node model.coffee_shop.customers
+[0m18:40:19.200665 [debug] [Thread-3 (]: Began running node test.coffee_shop.not_null_customers_customer_id.5c9bf9911d
+[0m18:40:19.201232 [debug] [Thread-4 (]: Began running node test.coffee_shop.unique_customers_customer_id.c5af1ff4b1
+[0m18:40:19.201869 [debug] [Thread-3 (]: Acquiring new bigquery connection 'test.coffee_shop.not_null_customers_customer_id.5c9bf9911d'
+[0m18:40:19.202460 [debug] [Thread-4 (]: Acquiring new bigquery connection 'test.coffee_shop.unique_customers_customer_id.c5af1ff4b1'
+[0m18:40:19.202927 [debug] [Thread-3 (]: Began compiling node test.coffee_shop.not_null_customers_customer_id.5c9bf9911d
+[0m18:40:19.203395 [debug] [Thread-4 (]: Began compiling node test.coffee_shop.unique_customers_customer_id.c5af1ff4b1
+[0m18:40:19.214898 [debug] [Thread-3 (]: Writing injected SQL for node "test.coffee_shop.not_null_customers_customer_id.5c9bf9911d"
+[0m18:40:19.221703 [debug] [Thread-4 (]: Writing injected SQL for node "test.coffee_shop.unique_customers_customer_id.c5af1ff4b1"
+[0m18:40:19.222572 [debug] [Thread-3 (]: Began executing node test.coffee_shop.not_null_customers_customer_id.5c9bf9911d
+[0m18:40:19.223238 [debug] [Thread-4 (]: Began executing node test.coffee_shop.unique_customers_customer_id.c5af1ff4b1
+[0m18:40:19.223695 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m18:40:19.224185 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m18:40:19.225200 [debug] [Thread-3 (]: Finished running node test.coffee_shop.not_null_customers_customer_id.5c9bf9911d
+[0m18:40:19.226063 [debug] [Thread-4 (]: Finished running node test.coffee_shop.unique_customers_customer_id.c5af1ff4b1
+[0m18:40:19.227501 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m18:40:19.227898 [debug] [MainThread]: Connection 'model.coffee_shop.customers' was properly closed.
+[0m18:40:19.228270 [debug] [MainThread]: Connection 'test.coffee_shop.not_null_customers_customer_id.5c9bf9911d' was properly closed.
+[0m18:40:19.228640 [debug] [MainThread]: Connection 'test.coffee_shop.unique_customers_customer_id.c5af1ff4b1' was properly closed.
+[0m18:40:19.229627 [debug] [MainThread]: Command end result
+[0m18:40:19.313350 [debug] [MainThread]: Wrote artifact WritableManifest to /workspaces/ae-club-kristen/target/manifest.json
+[0m18:40:19.316300 [debug] [MainThread]: Wrote artifact SemanticManifest to /workspaces/ae-club-kristen/target/semantic_manifest.json
+[0m18:40:19.323511 [debug] [MainThread]: Wrote artifact RunExecutionResult to /workspaces/ae-club-kristen/target/run_results.json
+[0m18:40:19.331077 [debug] [MainThread]: Acquiring new bigquery connection 'generate_catalog'
+[0m18:40:19.331567 [info ] [MainThread]: Building catalog
+[0m18:40:19.333118 [debug] [ThreadPool]: Acquiring new bigquery connection 'aec-students.information_schema'
+[0m18:40:19.353413 [debug] [ThreadPool]: On aec-students.information_schema: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "coffee_shop_kristen", "target_name": "dev", "connection_name": "aec-students.information_schema"} */
+
+    with
+                table_shards_stage as (
+    select
+        tables.project_id as table_catalog,
+        tables.dataset_id as table_schema,
+        coalesce(REGEXP_EXTRACT(tables.table_id, '^(.+)[0-9]{8}$'), tables.table_id) as table_name,
+        tables.table_id as shard_name,
+        REGEXP_EXTRACT(tables.table_id, '^.+([0-9]{8})$') as shard_index,
+        REGEXP_CONTAINS(tables.table_id, '^.+[0-9]{8}$') and tables.type = 1 as is_date_shard,
+        case
+            when materialized_views.table_name is not null then 'materialized view'
+            when tables.type = 1 then 'table'
+            when tables.type = 2 then 'view'
+            else 'external'
+        end as table_type,
+        tables.type = 1 as is_table,
+        JSON_VALUE(table_description.option_value) as table_comment,
+        tables.size_bytes,
+        tables.row_count
+    from `aec-students`.`dbt_kristen`.__TABLES__ tables
+    left join `aec-students`.`dbt_kristen`.INFORMATION_SCHEMA.MATERIALIZED_VIEWS materialized_views
+        on materialized_views.table_catalog = tables.project_id
+        and materialized_views.table_schema = tables.dataset_id
+        and materialized_views.table_name = tables.table_id
+    left join `aec-students`.`dbt_kristen`.INFORMATION_SCHEMA.TABLE_OPTIONS table_description
+        on table_description.table_catalog = tables.project_id
+        and table_description.table_schema = tables.dataset_id
+        and table_description.table_name = tables.table_id
+        and table_description.option_name = 'description'
+),
+                table_shards as (
+                    select * from table_shards_stage
+                    where ((
+                                upper(table_schema) = upper('dbt_kristen')
+                            and upper(table_name) = upper('customers')
+                            ))
+                ),
+                tables as (
+    select distinct
+        table_catalog,
+        table_schema,
+        table_name,
+        is_date_shard,
+        table_type,
+        is_table,
+        table_comment
+    from table_shards
+),
+                table_stats as (
+    select
+        table_catalog,
+        table_schema,
+        table_name,
+        max(shard_name) as latest_shard_name,
+        min(shard_index) as shard_min,
+        max(shard_index) as shard_max,
+        count(shard_index) as shard_count,
+        sum(size_bytes) as size_bytes,
+        sum(row_count) as row_count
+    from table_shards
+    group by 1, 2, 3
+),
+
+                columns as (
+    select
+        columns.table_catalog,
+        columns.table_schema,
+        columns.table_name as shard_name,
+        coalesce(paths.field_path, '<unknown>') as column_name,
+        -- invent a row number to account for nested fields
+        -- BQ does not treat these nested properties as independent fields
+        row_number() over (
+            partition by
+                columns.table_catalog,
+                columns.table_schema,
+                columns.table_name
+            order by
+                columns.ordinal_position,
+                paths.field_path
+        ) as column_index,
+        coalesce(paths.data_type, '<unknown>') as column_type,
+        paths.description as column_comment,
+        case when columns.is_partitioning_column = 'YES' then 1 else 0 end as is_partitioning_column,
+        case when columns.is_partitioning_column = 'YES' then paths.field_path end as partition_column,
+        case when columns.clustering_ordinal_position is not null then 1 else 0 end as is_clustering_column,
+        case when columns.clustering_ordinal_position is not null then paths.field_path end as cluster_column,
+        columns.clustering_ordinal_position
+    from `aec-students`.`dbt_kristen`.INFORMATION_SCHEMA.COLUMNS columns
+    join `aec-students`.`dbt_kristen`.INFORMATION_SCHEMA.COLUMN_FIELD_PATHS paths
+        on paths.table_catalog = columns.table_catalog
+        and paths.table_schema = columns.table_schema
+        and paths.table_name = columns.table_name
+        and paths.column_name = columns.column_name
+    where columns.ordinal_position is not null
+),
+                column_stats as (
+    select
+        table_catalog,
+        table_schema,
+        shard_name,
+        max(is_partitioning_column) = 1 as is_partitioned,
+        max(partition_column) as partition_column,
+        max(is_clustering_column) = 1 as is_clustered,
+        array_to_string(
+            array_agg(
+                cluster_column ignore nulls
+                order by clustering_ordinal_position
+            ), ', '
+        ) as clustering_columns
+    from columns
+    group by 1, 2, 3
+)
+
+            
+    select
+        tables.table_catalog as table_database,
+        tables.table_schema,
+        case
+            when tables.is_date_shard then concat(tables.table_name, '*')
+            else tables.table_name
+        end as table_name,
+        tables.table_type,
+        tables.table_comment,
+        -- coalesce column metadata fields to ensure they are non-null for catalog generation
+        -- external table columns are not present in COLUMN_FIELD_PATHS
+        coalesce(columns.column_name, '<unknown>') as column_name,
+        coalesce(columns.column_index, 1) as column_index,
+        coalesce(columns.column_type, '<unknown>') as column_type,
+        coalesce(columns.column_comment, '') as column_comment,
+
+        'Shard count' as `stats__date_shards__label`,
+        table_stats.shard_count as `stats__date_shards__value`,
+        'The number of date shards in this table' as `stats__date_shards__description`,
+        tables.is_date_shard as `stats__date_shards__include`,
+
+        'Shard (min)' as `stats__date_shard_min__label`,
+        table_stats.shard_min as `stats__date_shard_min__value`,
+        'The first date shard in this table' as `stats__date_shard_min__description`,
+        tables.is_date_shard as `stats__date_shard_min__include`,
+
+        'Shard (max)' as `stats__date_shard_max__label`,
+        table_stats.shard_max as `stats__date_shard_max__value`,
+        'The last date shard in this table' as `stats__date_shard_max__description`,
+        tables.is_date_shard as `stats__date_shard_max__include`,
+
+        '# Rows' as `stats__num_rows__label`,
+        table_stats.row_count as `stats__num_rows__value`,
+        'Approximate count of rows in this table' as `stats__num_rows__description`,
+        tables.is_table as `stats__num_rows__include`,
+
+        'Approximate Size' as `stats__num_bytes__label`,
+        table_stats.size_bytes as `stats__num_bytes__value`,
+        'Approximate size of table as reported by BigQuery' as `stats__num_bytes__description`,
+        tables.is_table as `stats__num_bytes__include`,
+
+        'Partitioned By' as `stats__partitioning_type__label`,
+        column_stats.partition_column as `stats__partitioning_type__value`,
+        'The partitioning column for this table' as `stats__partitioning_type__description`,
+        column_stats.is_partitioned as `stats__partitioning_type__include`,
+
+        'Clustered By' as `stats__clustering_fields__label`,
+        column_stats.clustering_columns as `stats__clustering_fields__value`,
+        'The clustering columns for this table' as `stats__clustering_fields__description`,
+        column_stats.is_clustered as `stats__clustering_fields__include`
+
+    from tables
+    join table_stats
+        on table_stats.table_catalog = tables.table_catalog
+        and table_stats.table_schema = tables.table_schema
+        and table_stats.table_name = tables.table_name
+    left join column_stats
+        on column_stats.table_catalog = tables.table_catalog
+        and column_stats.table_schema = tables.table_schema
+        and column_stats.shard_name = table_stats.latest_shard_name
+    left join columns
+        on columns.table_catalog = tables.table_catalog
+        and columns.table_schema = tables.table_schema
+        and columns.shard_name = table_stats.latest_shard_name
+
+  
+[0m18:40:19.354587 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m18:40:19.687620 [debug] [ThreadPool]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=aec-students&j=bq:US:314446d5-c8bc-4f2b-b2cc-6d4b074de444&page=queryresults
+[0m18:40:21.395926 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m18:40:21.407794 [debug] [MainThread]: Wrote artifact CatalogArtifact to /workspaces/ae-club-kristen/target/catalog.json
+[0m18:40:21.432064 [debug] [MainThread]: Wrote artifact WritableManifest to /workspaces/ae-club-kristen/target/manifest.json
+[0m18:40:21.433821 [debug] [MainThread]: Wrote artifact SemanticManifest to /workspaces/ae-club-kristen/target/semantic_manifest.json
+[0m18:40:21.434243 [info ] [MainThread]: Catalog written to /workspaces/ae-club-kristen/target/catalog.json
+[0m18:40:21.435385 [debug] [MainThread]: Resource report: {"command_name": "generate", "command_success": true, "command_wall_clock_time": 4.2661276, "process_in_blocks": "3392", "process_kernel_time": 0.375137, "process_mem_max_rss": "213600", "process_out_blocks": "5384", "process_user_time": 2.526191}
+[0m18:40:21.436116 [debug] [MainThread]: Command `dbt docs generate` succeeded at 18:40:21.436007 after 4.27 seconds
+[0m18:40:21.436519 [debug] [MainThread]: Connection 'generate_catalog' was properly closed.
+[0m18:40:21.436929 [debug] [MainThread]: Connection 'aec-students.information_schema' was properly closed.
+[0m18:40:21.437353 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a6aa04b0820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a6aa14863b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a6a8a5029e0>]}
+[0m18:40:21.437812 [debug] [MainThread]: Flushing usage events
+[0m18:40:21.451712 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:41:00.372194 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d9d8577c8e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d9d866219c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d9d86621960>]}
+
+
+============================== 18:41:00.375101 | 9cca5c56-70df-4590-ac2c-3f50a5de464d ==============================
+[0m18:41:00.375101 [info ] [MainThread]: Running with dbt=1.9.1
+[0m18:41:00.375847 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': '/workspaces/ae-club-kristen/logs', 'version_check': 'True', 'profiles_dir': '/home/vscode/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt docs serve', 'send_anonymous_usage_stats': 'True'}
+[0m18:41:01.135702 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '9cca5c56-70df-4590-ac2c-3f50a5de464d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d9d865cc220>]}
+[0m18:41:01.280870 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '9cca5c56-70df-4590-ac2c-3f50a5de464d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d9d6fbfc820>]}
+[0m18:41:37.989220 [error] [MainThread]: Encountered an error:
+
+[0m18:41:37.992693 [error] [MainThread]: Traceback (most recent call last):
+  File "/home/vscode/.local/lib/python3.10/site-packages/dbt/cli/requires.py", line 153, in wrapper
+    result, success = func(*args, **kwargs)
+  File "/home/vscode/.local/lib/python3.10/site-packages/dbt/cli/requires.py", line 103, in wrapper
+    return func(*args, **kwargs)
+  File "/home/vscode/.local/lib/python3.10/site-packages/dbt/cli/requires.py", line 235, in wrapper
+    return func(*args, **kwargs)
+  File "/home/vscode/.local/lib/python3.10/site-packages/dbt/cli/requires.py", line 264, in wrapper
+    return func(*args, **kwargs)
+  File "/home/vscode/.local/lib/python3.10/site-packages/dbt/cli/requires.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "/home/vscode/.local/lib/python3.10/site-packages/dbt/cli/main.py", line 301, in docs_serve
+    results = task.run()
+  File "/home/vscode/.local/lib/python3.10/site-packages/dbt/task/docs/serve.py", line 29, in run
+    httpd.serve_forever()
+  File "/usr/lib/python3.10/socketserver.py", line 232, in serve_forever
+    ready = selector.select(poll_interval)
+  File "/usr/lib/python3.10/selectors.py", line 416, in select
+    fd_event_list = self._selector.poll(timeout)
+KeyboardInterrupt
+
+[0m18:41:37.993891 [debug] [MainThread]: Resource report: {"command_name": "serve", "command_success": false, "command_wall_clock_time": 37.675488, "process_in_blocks": "456", "process_kernel_time": 0.25015, "process_mem_max_rss": "201272", "process_out_blocks": "3368", "process_user_time": 2.010945}
+[0m18:41:37.994744 [debug] [MainThread]: Command `dbt docs serve` failed at 18:41:37.994633 after 37.68 seconds
+[0m18:41:37.995175 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d9d8577c8e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d9d6fa29e70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d9d6fa2b1f0>]}
+[0m18:41:37.995663 [debug] [MainThread]: Flushing usage events
+[0m18:41:38.025964 [debug] [MainThread]: An error was encountered while trying to flush usage events
