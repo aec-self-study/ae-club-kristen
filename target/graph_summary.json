@@ -1,1 +1,1 @@
-{"_invocation_id": "7aee3b2d-a112-4208-abd6-fff8185cf402", "linked": {"0": {"name": "model.coffee_shop.customers", "type": "model"}}}
+{"_invocation_id": "d9af6db9-70b7-401e-b638-0b03fface2b6", "linked": {"0": {"name": "model.coffee_shop.customers", "type": "model", "succ": [1, 2]}, "1": {"name": "test.coffee_shop.unique_customers_customer_id.c5af1ff4b1", "type": "test"}, "2": {"name": "test.coffee_shop.not_null_customers_customer_id.5c9bf9911d", "type": "test"}}}

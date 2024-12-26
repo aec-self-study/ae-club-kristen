@@ -1,3 +1,5 @@
+
+ 
 select
 c.id as customer_id
 , c.name
